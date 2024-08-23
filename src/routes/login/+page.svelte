@@ -1,8 +1,6 @@
 <script>
-	import PocketBase from 'pocketbase';
 	import { goto } from '$app/navigation';
-
-	const pb = new PocketBase('http://localhost:8090');
+	import { pb } from '$lib/pocketbase';
 
 	let email = '';
 	let password = '';
