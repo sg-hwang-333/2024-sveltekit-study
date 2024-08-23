@@ -18,7 +18,7 @@
 	};
 
 	const gotoLogin = () => {
-		goto('../main');
+		goto('../');
 	};
 </script>
 
