@@ -1,12 +1,14 @@
 <script>
 	import { pb } from '$lib/pocketbase';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 
 	onMount(() => {
 		const user = pb.authStore.model;
 		console.log(user);
 		if (user == null) {
 			alert('로그인 후 이용 가능합니다');
+			goto('/login');
 		}
 	});
 </script>
