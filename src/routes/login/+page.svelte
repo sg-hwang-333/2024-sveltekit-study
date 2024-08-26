@@ -1,11 +1,13 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { pb } from '$lib/pocketbase';
+	import { isLogin } from '../stores/isLoginStore';
 
 	let email = '';
 	let password = '';
 
 	const handleLogin = async () => {
+		isLogin.set(true);
 		try {
 			await pb.collection('users').authWithPassword(email, password);
 
