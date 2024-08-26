@@ -7,10 +7,9 @@
 	let password = '';
 
 	const handleLogin = async () => {
-		isLogin.set(true);
 		try {
 			await pb.collection('users').authWithPassword(email, password);
-
+			isLogin.set(true);
 			alert('로그인 성공');
 			gotoLogin();
 		} catch (error) {
@@ -24,7 +23,7 @@
 	};
 </script>
 
-<h1>로그인</h1>
+<h1 class="text-3xl font-bold underline">로그인</h1>
 
 <form on:submit={handleLogin}>
 	<label>

@@ -4,31 +4,18 @@
 	import { onDestroy, onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { isLogin } from './stores/isLoginStore';
-
-	let login;
-
-	const unsubscribe = isLogin.subscribe((val) => {
-		login = val;
-	});
+	import '../app.css';
 
 	const handleLogout = () => {
 		isLogin.set(false);
 		pb.authStore.clear();
 		alert('로그아웃 되었습니다');
 	};
-
-	onDestroy(unsubscribe);
-
-	let user = false;
-	onMount(() => {
-		user = pb.authStore.model;
-		console.log(user);
-	});
 </script>
 
 <nav>
 	<ul>
-		{#if login}
+		{#if $isLogin}
 			<button on:click={handleLogout}>로그아웃</button>
 
 			<main>
