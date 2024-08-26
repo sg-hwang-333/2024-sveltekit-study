@@ -1,13 +1,12 @@
 <script>
-	import { pb } from '$lib/pocketbase';
-	import { onMount } from 'svelte';
+	import { afterUpdate } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { isLogin } from '../stores/isLoginStore';
 
-	onMount(() => {
-		if (!isLogin) {
-			alert('로그인 후 이용 가능합니다');
-			goto('/login');
+	afterUpdate(() => {
+		if (!$isLogin) {
+			window.alert('로그인 후 사용 가능합니다');
+			goto('../signin');
 		}
 	});
 </script>
