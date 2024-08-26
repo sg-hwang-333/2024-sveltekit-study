@@ -4,7 +4,8 @@
 	import { onDestroy, onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { isLogin } from './stores/isLoginStore';
-	import '../app.css';
+
+	import '../app.postcss';
 
 	const handleLogout = () => {
 		isLogin.set(false);
