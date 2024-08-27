@@ -52,28 +52,28 @@
 						bind:value={name}
 						required
 						placeholder="이름을 입력해주세요"
-						class="w-full mb-3 px-5 py-8 pl-12 text-lg bg-[url('images/icon/user/default.svg')] bg-no-repeat bg-[left_12px_center]"
+						class="w-full mb-3 px-5 py-8 pl-12 text-lg bg-[url('/images/icon/user/default.svg')] bg-no-repeat bg-[left_14px_center]"
 					/>
 					<Input
 						type="email"
 						bind:value={email}
 						required
 						placeholder="이메일을 입력해주세요"
-						class="w-full mb-3 px-5 py-8 pl-12 text-lg bg-[url('images/icon/email/default.svg')] bg-no-repeat bg-[left_14px_center]"
+						class="w-full mb-3 px-5 py-8 pl-12 text-lg bg-[url('/images/icon/email/default.svg')] bg-no-repeat bg-[left_14px_center]"
 					/>
 					<Input
 						type="password"
 						bind:value={password}
 						required
 						placeholder="패스워드를 입력해주세요"
-						class="w-full mb-3 px-5 py-8 pl-12 text-lg bg-[url('images/icon/password/default.svg')] bg-no-repeat bg-[left_14px_center]"
+						class="w-full mb-3 px-5 py-8 pl-12 text-lg bg-[url('/images/icon/password/default.svg')] bg-no-repeat bg-[left_14px_center]"
 					/>
 					<Input
 						type="password"
 						bind:value={passwordConfirm}
 						required
 						placeholder="패스워드를 다시 입력해주세요"
-						class="w-full mb-3 px-5 py-8 pl-12 text-lg bg-[url('images/icon/password/default.svg')] bg-no-repeat bg-[left_14px_center]"
+						class="w-full mb-3 px-5 py-8 pl-12 text-lg bg-[url('/images/icon/password/default.svg')] bg-no-repeat bg-[left_14px_center]"
 					/>
 					<Button
 						type="submit"

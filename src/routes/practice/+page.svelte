@@ -11,9 +11,4 @@
 	});
 </script>
 
-<h1>메인 페이지</h1>
-
-<ul>
-	<li><a href="../">Home</a></li>
-	<li><a href="main/info">Info</a></li>
-</ul>
+<h1>연습 페이지</h1>
